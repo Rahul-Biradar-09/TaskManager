@@ -3,10 +3,16 @@
 Task Manager Web Application
 
 
+
+
+
 -------DESCRIPTION----------
 
 Simple and clean full-stack Task Manager web app built with Vite + React on the frontend and Node.js + Express on the backend. 
 It allows you to create, edit, and delete tasks — perfect for small personal productivity or developer demo projects.
+
+
+
 
 
 ---------FEATURES----------
@@ -19,6 +25,10 @@ Create new tasks with title, description, status, and due date
 - Clean and responsive UI
 - Fast frontend with Vite
 - In-memory backend storage (no database needed)
+
+
+
+
 
 
 -----------DEVELOPMENT PROCESS------------
@@ -81,6 +91,9 @@ Backend (Node.js + Express)
 
 
 
+
+
+
 ---------PROJECT STRUCTURE-----------
 
 
@@ -111,6 +124,8 @@ task-manager/
 
 
 
+
+
 --------SETUP INSTRUCTIONS----------
 
 
@@ -133,12 +148,16 @@ task-manager/
 3. Command Line:- 
 
    Frontend runs on http://localhost:5173
+   
    Backend runs on http://localhost:5000
 
 
 
 
+
+
 ---------DEPLOYMENT LINK----------
+
 
 
 
