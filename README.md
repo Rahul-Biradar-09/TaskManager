@@ -30,6 +30,36 @@ Create new tasks with title, description, status, and due date
 
 
 
+---------PROJECT STRUCTURE-----------
+
+
+task-manager/
+├── backend/               # Express API
+│   ├── index.js
+│   ├── routes/tasks.js
+│   └── utils/storage.js
+│
+├── frontend/              # Vite + React frontend
+│   ├── src/
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   ├── api.js
+│   │   ├── components/
+│   │   │   ├── TaskForm.jsx
+│   │   │   └── TaskForm.css
+│   │   └── pages/
+│   │       ├── Home.jsx
+│   │       ├── AddTask.jsx
+│   │       ├── EditTask.jsx
+│   │       └── styles.css
+│   └── vite.config.js
+│
+├── README.md
+└── package.json           # Optional: root scripts with concurrently
+
+
+
+
 
 -----------DEVELOPMENT PROCESS------------
 
@@ -93,70 +123,37 @@ Backend (Node.js + Express)
 
 
 
-
----------PROJECT STRUCTURE-----------
-
-
-task-manager/
-├── backend/               # Express API
-│   ├── index.js
-│   ├── routes/tasks.js
-│   └── utils/storage.js
-│
-├── frontend/              # Vite + React frontend
-│   ├── src/
-│   │   ├── App.jsx
-│   │   ├── main.jsx
-│   │   ├── api.js
-│   │   ├── components/
-│   │   │   ├── TaskForm.jsx
-│   │   │   └── TaskForm.css
-│   │   └── pages/
-│   │       ├── Home.jsx
-│   │       ├── AddTask.jsx
-│   │       ├── EditTask.jsx
-│   │       └── styles.css
-│   └── vite.config.js
-│
-├── README.md
-└── package.json           # Optional: root scripts with concurrently
-
-
-
-
-
-
 --------SETUP INSTRUCTIONS----------
 
 
 1. Start Backend:-
 
    cd task-manager
+   
    cd backend
+   
    npm install
+   
    node index.js
 
 
-2. Start Frontend (Vite):-
+3. Start Frontend (Vite):-
 
    cd task-manager
+
    cd ../frontend
+   
    npm install
+   
    npm run dev
 
 
-3. Command Line:- 
+5. Command Line:- 
 
    Frontend runs on http://localhost:5173
    
    Backend runs on http://localhost:5000
 
-
-
-
-
-
----------DEPLOYMENT LINK----------
 
 
 
