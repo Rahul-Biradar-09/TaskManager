@@ -18,6 +18,7 @@ It allows you to create, edit, and delete tasks — perfect for small personal p
 ---------FEATURES----------
 
 Create new tasks with title, description, status, and due date
+
 - Edit existing tasks
 - Delete tasks
 - Real-time updates after add/edit/delete
@@ -68,27 +69,36 @@ Frontend (Vite + React)
 1. Bootstrapped using Vite:
    
    npm create vite@latest frontend --template react
+   
    cd frontend
+   
    npm install
+   
    npm install react-router-dom
 
 
-2. Pages/Components:
+3. Pages/Components:
 
    /home displays tasks
+   
    /add renders TaskForm for new task
+   
    /edit/:id uses same TaskForm to edit
+   
    State is handled with useState, useEffect, and useNavigate
 
-3. API:
+5. API:
 
    Calls handled via a custom api.js file
+   
    Proxy configured in vite.config.js to avoid CORS
 
-4. Styling:
+7. Styling:
 
    Pure CSS (no external UI libraries)
+   
    Responsive layout
+   
    Centered form and task cards
 
 
@@ -97,26 +107,30 @@ Backend (Node.js + Express)
 
 1. Initialized:
 
-   bash
-   Copy
-   Edit
    cd backend
+   
    npm init -y
+   
    npm install express cors uuid
 
 
-2. Endpoints:
+3. Endpoints:
 
    GET /tasks — fetch all tasks
+   
    POST /tasks — create task
+   
    PUT /tasks/:id — update task
+   
    DELETE /tasks/:id — delete task
 
 
-3. Data:
+5. Data:
 
    Tasks stored in-memory in utils/storage.js
+   
    UUIDs used for task IDs
+   
    Uses express.json() to handle JSON payloads
 
 
